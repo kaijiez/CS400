@@ -1,4 +1,5 @@
 let result = expression =>{
+    //match epxression to number, operator and number
     const parts = expression.match(/(\d+|[-+/*])/g);
     switch (parts[1]) {
         case '+':
