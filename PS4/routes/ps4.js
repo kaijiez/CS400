@@ -3,7 +3,6 @@ const router = express.Router();
 const request = require('request');
 const config = require('../config/config.js');
 
-// const key = '2972d7072c224b92b51e32b91d73aa58';
 
 const getNews = function(searchTerm){
     return new Promise(function (resolve, reject){
