@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    h1= title
+
+    each article in articles
+        div.article
+            h2= article.title
+            p
+                = "by "+article.author
+            p
+                = "published at "+ article.publishedAt
+            img(src=article.urlToImage,style='width:500px; height:500px;')
+            p
+                =article.content
+
+            a(href=article.url) Clicked here for Full Link
+
+            hr
