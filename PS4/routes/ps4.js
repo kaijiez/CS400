@@ -3,7 +3,6 @@ const router = express.Router();
 const request = require('request');
 const config = require('../config/config.js');
 
-
 const getNews = function(searchTerm){
     return new Promise(function (resolve, reject){
         //get top 5 newest new results
