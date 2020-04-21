@@ -1,0 +1,17 @@
+<div>
+
+  <ul>
+    <li *ngFor="let article of articles">
+      <h1> {{article.title}}</h1>
+      <p>by {{article.author}} on {{article.publishedAt}}</p>
+      <img src="{{article.urlToImage}}">
+      <p>{{article.content}}</p>
+      <a href="{{article.url}}">click here to access full article</a>
+      <hr>
+    </li>
+  </ul>
+
+
+
+</div>
+
