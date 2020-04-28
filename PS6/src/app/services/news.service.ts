@@ -6,10 +6,10 @@ import {key} from '../config/config';
   providedIn: 'root'
 })
 export class NewsService {
-
-  url = 'https://newsapi.org/v2/everything?';
+  url = 'http://localhost:3000/ps4/getnews';
+  // connect to backend api in PS4
   getNews(searchterm){
-    return this.http.get(`${this.url}q=${searchterm}&pageSize=5&page=1&apiKey=${key}`);
+    return this.http.get(this.url, {params: {search: searchterm}});
   }
 
   constructor(private http: HttpClient) { }
